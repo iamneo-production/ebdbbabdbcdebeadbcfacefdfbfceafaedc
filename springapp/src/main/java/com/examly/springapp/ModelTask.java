@@ -6,16 +6,15 @@ import javax.persistence.Id;
 @Entity
 public class ModelTask {
     @Id
-    String taskId;
+    int taskId;
     String taskHolderName;
     String taskDate;
     String taskName;
-    String taskStatus;
-
-    public String getTaskId() {
+    String houseno;
+    public int getTaskId() {
         return taskId;
     }
-    public void setTaskId(String taskId) {
+    public void setTaskId(int taskId) {
         this.taskId = taskId;
     }
     public String getTaskHolderName() {
@@ -41,6 +40,13 @@ public class ModelTask {
     }
     public void setTaskStatus(String taskStatus) {
         this.taskStatus = taskStatus;
+    }
+    String taskStatus;
+    public String getHouseno() {
+        return houseno;
+    }
+    public void setHouseno(String houseno) {
+        this.houseno=houseno;
     }
 
     
