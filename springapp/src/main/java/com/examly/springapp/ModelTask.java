@@ -4,17 +4,19 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
+@Table(name = "task")
 public class ModelTask {
     @Id
- taskId;
+    String taskId;
     String taskHolderName;
     String taskDate;
     String taskName;
-    String houseno;
-    public int getTaskId() {
+    String taskStatus;
+    
+    public String getTaskId() {
         return taskId;
     }
-    public void setTaskId(int taskId) {
+    public void setTaskId(String taskId) {
         this.taskId = taskId;
     }
     public String getTaskHolderName() {
@@ -40,13 +42,6 @@ public class ModelTask {
     }
     public void setTaskStatus(String taskStatus) {
         this.taskStatus = taskStatus;
-    }
-    String taskStatus;
-    public String getHouseno() {
-        return houseno;
-    }
-    public void setHouseno(String houseno) {
-        this.houseno=houseno;
     }
 
     
