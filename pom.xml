@@ -13,6 +13,11 @@
         <sonar.tests>springapp/src/test</sonar.tests>
         <sonar.java.binaries>target</sonar.java.binaries>
     </properties>
+    <parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>3.1.3</version>
+</parent>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
