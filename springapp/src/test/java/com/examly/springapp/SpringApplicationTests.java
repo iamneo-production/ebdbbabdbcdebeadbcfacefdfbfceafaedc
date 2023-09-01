@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 @SpringBootTest(classes = SpringappApplication.class)
 @AutoConfigureMockMvc
 @RunWith(SpringRunner.class)
-public class SpringApplicationTests {
+public class SpringApplicationTests extends Object{
 
 	@Autowired
     private MockMvc mockMvc;	
