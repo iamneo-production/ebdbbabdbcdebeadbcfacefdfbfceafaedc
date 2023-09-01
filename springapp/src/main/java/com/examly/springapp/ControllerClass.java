@@ -10,7 +10,8 @@ import java.util.*;
 @RestController
 public class ControllerClass {
     @Autowired
-    ServiceClass service;
+    private ServiceClass service;
+
     @GetMapping("/alltasks")
     public List<ModelTask> getAllTasks()
     {
