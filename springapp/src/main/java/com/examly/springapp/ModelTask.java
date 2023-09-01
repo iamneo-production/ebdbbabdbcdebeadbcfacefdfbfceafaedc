@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-@Table(name = "task")
 public class ModelTask {
     @Id
     String taskId;
@@ -12,7 +11,7 @@ public class ModelTask {
     String taskDate;
     String taskName;
     String taskStatus;
-    
+
     public String getTaskId() {
         return taskId;
     }
